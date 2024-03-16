@@ -12,6 +12,8 @@ Write an efficient algorithm for the following assumptions:
 - each element of array A is an integer within the range [-1,000,000..1,000,000]
 - A is unordered
 
+## Naive Solution
+
 The naive solution is to look at the array A for every value of a variable i, where i starts at 1 and counts up.
 
 When the i<sup>th</sup> value is found, then try the next one.
