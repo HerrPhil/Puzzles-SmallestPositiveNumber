@@ -14,6 +14,9 @@ Write an efficient algorithm for the following assumptions:
 
 The naive solution is to look at the array A for every value of a variable i, where i starts at 1 and counts up.
 
-When the i<sup>th</sup> value id
+When the i<sup>th</sup> value is found, then try the next one.
+
+When the i<sup>th</sup> value is not found, then this is the smallest positive integer not in array A.
 
 This is O(n<sup>2</sup>) efficient.
+
