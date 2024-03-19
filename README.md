@@ -71,6 +71,7 @@ The algorithm now knows the smallest and next smallest value of this iteration.
 Track the current largest value by storing the maximum value of current largest or next smallest.
 
 If ith index is equal to 0, then seed the current smallest and current next smallest values with the smallest and next smallest values, respectively.
+
 Continue to the next pair.
 
 If the algorithm has seen the floor case and the smallest value is between 1 and 3, inclusive, then continue to the next pair.
@@ -79,7 +80,8 @@ If the next smallest value is less than the current smallest value, then this pa
 Check for the floor case. When the smallest value is 1, the next smallest value is 2, and the current smallest value is 3,
 then there is no gap for the smallest positive integer here. Mark the floor case as found and continue to the next pair.
 Otherwise, store the current smallest and current next smallest values.
-Continu o the next pair.
+
+Continue to the next pair.
 
 If the smallest value is less than the current smallest value, then this pair straddles the current smallest value.
 
@@ -93,6 +95,8 @@ then there is no gap for the smallest positive integer.
 If the current next smallest value is greater than the next smallest value, tighten up the bigger value.
 The current next smallest vlau is assigned the next smallest value.
 
+Continue to the next pair.
+
 If the current smallest value is less than the smallest value, then this pair straddles the current next smallest value.
 
 If the difference between the current smallest value and smallest value is greater than 1,
@@ -105,7 +109,11 @@ The current smallest value is assigned the smallest value.
 If the current next smallest value is greater than the next smallest value,
 then the current next smallest value is assigned the next smallest value.
 
+Continue to the next pair.
+
 If the current next smallest value is less than the smallest value, then do nothing.
+
+Continue to the next pair.
 
 After the looping finshes, check the current values.
 
