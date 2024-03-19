@@ -111,9 +111,8 @@ After the looping finshes, check the current values.
 
 If the value 1 is not found, then the smallest positive integer is 1.
 
-Otherwise, check for a gap.
+Otherwise, check for a gap between the current smallest pair.
 
 If the differece between the the current smallest value and current next smallest value is greater than 1,
 then the smallest positive integer is current smallest value plus 1.
 Otherwise the smallest positive integer is current largest value plus 1.
-
