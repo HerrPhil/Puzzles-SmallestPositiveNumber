@@ -74,7 +74,9 @@ If ith index is equal to 0, then seed the current smallest and current next smal
 
 Continue to the next pair.
 
-If the algorithm has seen the floor case and the smallest value is between 1 and 3, inclusive, then continue to the next pair.
+If the algorithm has seen the floor case and the smallest value is between 1 and 3, inclusive, then there is no analysis.
+
+Continue to the next pair.
 
 If the next smallest value is less than the current smallest value, then this pair is less than all checked values, so far.
 Check for the floor case. When the smallest value is 1, the next smallest value is 2, and the current smallest value is 3,
