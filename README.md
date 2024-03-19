@@ -22,7 +22,7 @@ When the i<sup>th</sup> value is not found, then this is the smallest positive i
 
 This is O(n<sup>2</sup>) efficient.
 
-## Traverse Solution
+## Traverse by Pairs Solution
 
 The traverse solution iterates over the array A once.
 
