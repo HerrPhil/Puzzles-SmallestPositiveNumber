@@ -30,6 +30,8 @@ The solution ignores zero and negatives; treats them as Integer.MAX_VALUE = 2,14
 
 The solution looks at a pair of values every time.
 
+This is O(n) efficient.
+
 The goal is to find either:
 
 - 1 is not in the list, or
