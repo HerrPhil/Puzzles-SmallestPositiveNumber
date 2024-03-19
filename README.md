@@ -137,8 +137,8 @@ Follow the steps below to solve the problem:
 
 - The smallest positive integer is 1. First, we will check if 1 is present in the array or not. If it is not present then 1 is the answer.
 - If present then, again traverse the array. The largest possible answer is N+1 where N is the size of the array. 
- - When traversing the array, if we find any number less than 1 or greater than N, change it to 1. 
- - This will not change anything as the answer will always be between 1 to N+1. Now our array has elements from 1 to N.
+  - When traversing the array, if we find any number less than 1 or greater than N, change it to 1. 
+  - This will not change anything as the answer will always be between 1 to N+1. Now our array has elements from 1 to N.
 - Now, for every ith number, increase arr[ (arr[i]-1) ] by N. But this will increase the value more than N. So, we will access the array by arr[(arr[i]-1)%N].
 - We will find now which index has a value less than N+1. Then i+1 will be our answer. 
 
