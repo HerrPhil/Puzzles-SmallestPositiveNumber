@@ -84,7 +84,7 @@ public class ChangeValues {
 
         // Changing values to 1
         for (int i = 0; i < elements; i++) {
-            if (a[i] <= 0) {
+            if (a[i] <= 0|| a[i] > elements) {
                 a[i] = 1;
             }
         }
@@ -93,10 +93,10 @@ public class ChangeValues {
 
         // Updating indices according to values
         for (int i = 0; i < elements; i++) {
-            a[(a[i] - 1) % elements] += elements; // ????
+            System.out.printf("i: %d, a[i]: %d, (a[i] - 1) modulo elements: %d, a[(a[i] - 1) modulo elements]: %d%n", i, a[i], (a[i] - 1) % elements, a[(a[i] - 1) % elements]);
+            a[(a[i] - 1) % elements] += elements;
+            System.out.printf("Array after updating indices according to values %s%n", Arrays.toString(a));
         }
-
-        System.out.printf("Array after updating indices according to values %s%n", Arrays.toString(a));
 
         // Finding which index has a value less than elements value
         boolean match = false;
