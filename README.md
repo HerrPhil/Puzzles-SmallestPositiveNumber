@@ -142,6 +142,18 @@ Follow the steps below to solve the problem:
 - Now, for every ith number, increase arr[ (arr[i]-1) ] by N. But this will increase the value more than N. So, we will access the array by arr[(arr[i]-1)%N].
 - We will find now which index has a value less than N+1. Then i+1 will be our answer. 
 
-I discovered that this solution only passes 8 of 9 tests. It fails test 7. Expect a result of 4, actual result is 7.
+At first, the assignment of any element of the array to 1 when it is greater than N did not make sense to me.
 
+Then I realized that very big values an N close to or equal to the very big value to make the smallest positive number near that value.
 
+The edge case is an array of length full of contiguous value, and one value that is huge.
+
+The gap between the large value and N-1 means the smallest positive integer is N.
+
+The smallest positive integer is N+1 when the array is all contiguous values less than or equal to N.
+
+Further to that, I struggle why add an arbitrary value, like N, to each element based on an existing value in an element at index i would work.
+
+Then I realized that all the values are now indices in the array.
+
+The first indice not in the array will be the smallest positive
