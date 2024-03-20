@@ -157,3 +157,17 @@ Further to that, I struggle why add an arbitrary value, like N, to each element 
 Then I realized that all the values are now indices in the array.
 
 The first indice not in the array will be the smallest positive
+
+## Swap Values Solution
+
+Found [here](https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/).
+
+The idea is to swap the elements which are in the range 1 to N should be placed at their respective indexes.
+
+Follow the steps below to solve the problem:
+
+- Traverse the array, Ignore the elements which are greater than N and less than 1.
+- While traversing, check if a[i] not equal to a[a[i]-1] holds true or not .
+  - If the above condition is true then swap a[i] and a[a[i] – 1]  and swap until (a[i] not equal to a[a[i] – 1]) condition fails.
+- Traverse the array and check whether a[i] ? i + 1 then return i + 1.
+- If all are equal to its index then return N+1.
