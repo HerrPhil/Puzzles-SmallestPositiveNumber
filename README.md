@@ -188,6 +188,8 @@ If all n values are checked and the condition is not met, then n + 1 is the fina
 
 The swapping process will have left the array like, for example:
 
+```
 i:.....0 1 2 3
 
 value:.1 2 5 7
+```
