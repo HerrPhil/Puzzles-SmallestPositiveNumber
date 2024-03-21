@@ -171,3 +171,21 @@ Follow the steps below to solve the problem:
   - If the above condition is true then swap a[i] and a[a[i] – 1]  and swap until (a[i] not equal to a[a[i] – 1]) condition fails.
 - Traverse the array and check whether a[i] ? i + 1 then return i + 1.
 - If all are equal to its index then return N+1.
+
+The stop condition was one detail that was not obvious to me as to why it works.
+
+After a few swaps, the array with be in a state where there is an element whose value is one more than its index.
+
+For example when i=1 and a[i] = 2.
+
+a[i] is a[1] = 2
+
+a[a[i] - 1] is a[2 - 1] is a[1] = 2
+
+In this state, when a[i] is not equal to i + 1, then the missing smallest positive integer.
+
+The swapping process will have left the array like, for example:
+
+i:     0 1 2 3
+
+value: 1 2 5 7
